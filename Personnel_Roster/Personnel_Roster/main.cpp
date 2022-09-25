@@ -24,9 +24,6 @@ int main() {
     int numStudents = 5;
     int i;
     
-// Print description
-    cout << "Personnel Database" << endl;
-    
 // Instantiate roster class as personRoster
     Roster personRoster;
     
@@ -34,8 +31,51 @@ int main() {
     for (i = 0; i < numStudents; i++) {
         personRoster.ParseAndAdd(personData[i]);
     }
+    while (true) {
+        
+        int input;
+        
+        cout << "Personnel Database\n" << endl;
+        cout << "Select one of the options below." << endl;
+        cout << "\t1. Display all personnel records" << endl;
+        cout << "\t2. Search for records based on name" << endl;
+        cout << "\t3. Display records in the specified grade" << endl;
+        cout << "\t4. Display records in the specified job" << endl;
+        cout << "\t5. Delete record" << endl;
+        cout << "\t6. Quit\n" << endl;
+        cout << "Enter your selection: ";
+        cin >> input;
+        cout << "\n";
+        
+        switch(input) {
+            case 1:
+                personRoster.PrintAll();
+                personRoster.ReturnToMenu();
+                break;
+            case 2:
+                personRoster.PrintByName();
+                personRoster.ReturnToMenu();
+                break;
+            case 3:
+                personRoster.PrintByGrade();
+                personRoster.ReturnToMenu();
+                break;
+            case 4:
+                personRoster.PrintByJobCode();
+                personRoster.ReturnToMenu();
+                break;
+            case 5:
+                personRoster.Remove();
+                personRoster.ReturnToMenu();
+                break;
+            case 6:
+                exit(0);
+                break;
+                
+        }
+    }
 
-// Print all records
+/*// Print all records
     personRoster.PrintAll();
 
 // Print each person in the specified grade
@@ -55,6 +95,6 @@ int main() {
     
 // Implement destructor
     personRoster.~Roster();
-    
+*/
     return 0;
 }

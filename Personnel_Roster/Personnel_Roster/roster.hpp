@@ -35,15 +35,25 @@ class Roster {
     
     // Remove function to remove records based on last and first name with confirmation prompt and messages
         void Remove(string lName, string fName);
+        void Remove();
     
     // Print function that loops through and prints all personnel
         void PrintAll();
     
+    // Print funcation that prints person based on first and last name
+        void PrintByName(string lName, string fName);
+        void PrintByName();
+    
     // Print function that prints personnel by grade
         void PrintByGrade(Grade grade);
+        void PrintByGrade();
     
      // Print function that prints personnel by job code
-        void PrintByJobCode(JobCode code);   
+        void PrintByJobCode(JobCode code);
+        void PrintByJobCode();
+    
+    // Return to main menu
+        void ReturnToMenu();
 
     private:
         string personData;
