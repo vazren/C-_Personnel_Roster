@@ -2,10 +2,10 @@ Personnel Roster
 
 This application parses and manipulates data from an input string, and stores them in objects.  There are 2 classes in the project.
 
-Person class
-  Defines Person objects
-  Stores variable data
-  Functions that return and modify data
+Person class\n
+  Defines Person objects\n
+  Stores variable data\n
+  Functions that return and modify data\n
 
 Roster class
   Parses data from a string
