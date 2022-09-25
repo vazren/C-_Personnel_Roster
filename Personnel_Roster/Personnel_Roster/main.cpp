@@ -75,26 +75,5 @@ int main() {
         }
     }
 
-/*// Print all records
-    personRoster.PrintAll();
-
-// Print each person in the specified grade
-    personRoster.PrintByGrade(Grade::E4);
-    
-// Print each person in the specified job code
-    personRoster.PrintByJobCode(JobCode::H25);
-
-// Remove the record for specified last and first name. Print success message and error if not found
-    personRoster.Remove("Vazquez", "Lauren");
-    
-// Print all people to verify removal of person specified above
-    personRoster.PrintAll();
-    
-// Verify that error message displays due previous removal of person
-    personRoster.Remove("Vazquez", "Lauren");
-    
-// Implement destructor
-    personRoster.~Roster();
-*/
     return 0;
 }
