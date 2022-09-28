@@ -69,6 +69,7 @@ int main() {
                 personRoster.ReturnToMenu();
                 break;
             case 6:
+                personRoster.~Roster();
                 exit(0);
                 break;
                 
